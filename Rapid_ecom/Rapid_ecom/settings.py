@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "crispy_forms",
     "users.apps.UsersConfig",
     "Ecommerce.apps.EcommerceConfig",
     "django.contrib.admin",
@@ -120,3 +121,6 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR, "templates"),)
 
 LOGIN_REDIRECT_URL = "ecom-home"
 
+LOGIN_URL = "login"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"

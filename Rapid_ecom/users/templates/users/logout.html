@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Logged Out</title>
-</head>
-
-<body>
-   <h1>Logged Out</h1>
-   <div>
-      <small>Log In Again<a href="{% url 'login' %}">Log In</a></small>
-   </div>
-</body>
-
-</html>
+{% block content %}
+<h1>Logged Out</h1>
+<div>
+   <small>Log In Again<a class="ml-2" href="{% url 'login' %}">Log In</a></small>
+</div>
+{% endblock content %}
